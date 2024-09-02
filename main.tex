@@ -148,7 +148,8 @@ For what concerns data on municipalities' public finances, from 1998 to 2014, we
 \noindent
 For the first part of the paper, we focus on the impact of refugee centers on local spending patterns, using a difference-in-difference approach with multiple treatments in different periods, following \cite{clarke2020}.\ We use both the never-treated and the not-yet treated as control groups, controlling for relevant observable characteristics, as total, foreign, and African population, as well as the tax base and the number of taxpayers with an employee contract.\ We also control for the presence of the other type of ASRC in the municipality (e.g.\ controlling for the presence of SAI in the CAS analysis and viceversa).\ Given the high number of observations in the control group, we restrict the untreated units using a propensity score matching (PSM) \citep{rubin1985} based on geographical characteristics (e.g. location, region and province, altitude, climate, etc.).\ Our assumption is that municipalities' location and climatic features may influence the choice of opening a refugee center but are not affected by the treatment itself in the post-treatment period \citep{Austin2011AnStudies}.\ For this first analysis, we end up having 773 treated municipalities matched with 743 controls.\\ 
 
-\input{tables/descriptive}
+\input{tables/pop_100000/descriptive stats cas.txt}
+
 
 \section*{Results}
 
@@ -164,9 +165,9 @@ For what concerns the SAI centers, as Figure \ref{fig:total_spending} shows, the
 \noindent
 For what concerns the CAS centers, which are imposed by the central government following a more 'top-down' approach, the impacts on public spending are more evident.\ This could be also due to exogenous feature of the treatment for these municipalities.\ While for SAI centers the application to open the centers comes from the municipality itself, for CAS facilities most of the times the decision comes from the Ministry of the Interior.\ In these municipalities, we find an increase in the expenditures related to local police and education activities (Figures \ref{fig:caspolice} and \ref{fig:caseducation}).\ We also see a significant reduction on expenditures related to culture, economic development, and the environment (Figures \ref{fig:casculture}, \ref{fig:casecodev}, \ref{fig:casenvironment}).\ We believe that such changes are related to the perceived negative impact of the center on the local community, forcing the administration to increase the safety of the city through more local police and to increase the expenditure on local schools.\ More 'social oriented' expenditure, such as cultural, environmental, and economic development, seem to be the ones to be reduced instead.\\ 
 
-\input{tables/old tables/table event dd sai}
+\input{tables/pop_100000/table event dd cas}
 
-\input{tables/old tables/table event dd cas}
+\input{tables/pop_100000/table event dd sai}
 
 
 \FloatBarrier
@@ -181,7 +182,7 @@ As a second step, we explore the impact of these types of centers on the local e
 \renewcommand{\arraystretch}{1.5}
 \caption{Regression table for DID analysis on mayor's change - SAI}
 \centering
-\input{tables/sai step 2}
+\input{tables/step 2/sai step 2}
 \end{table}
 
 \begin{table}[!ht]
@@ -189,7 +190,7 @@ As a second step, we explore the impact of these types of centers on the local e
 \renewcommand{\arraystretch}{1.5}
 \caption{Regression table for DID analysis on mayor's change - CAS}
 \centering
-\input{tables/cas step 2}
+\input{tables/step 2/cas step 2}
 \end{table}
 
 \section*{Conclusions}

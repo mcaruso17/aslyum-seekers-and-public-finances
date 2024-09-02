@@ -1,9 +1,4 @@
-\documentclass{article}
-\usepackage{multirow}
-\usepackage{amsmath}
-\usepackage{ulem}
-\usepackage[table]{xcolor}
-\begin{document}
+
 \begin{table}[!h]
 \centering
 \begin{tabular}{llll}
@@ -158,4 +153,3 @@
 \cline{1-4}
 \end{tabular}
 \end{table}
-\end{document}
