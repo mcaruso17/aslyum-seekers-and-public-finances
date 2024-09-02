@@ -1,0 +1,161 @@
+\documentclass{article}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{ulem}
+\usepackage[table]{xcolor}
+\begin{document}
+\begin{table}[!h]
+\centering
+\begin{tabular}{llll}
+\cline{1-4}
+\multicolumn{1}{r}{} &
+  \multicolumn{3}{c}{Treatment assignment - CAS} \\
+\multicolumn{1}{r}{} &
+  \multicolumn{1}{c}{Untreated} &
+  \multicolumn{1}{c}{Treated} &
+  \multicolumn{1}{c}{Test} \\
+\cline{1-4}
+\multicolumn{1}{l}{N} &
+  \multicolumn{1}{r}{1,697 (57.2\%)} &
+  \multicolumn{1}{r}{1,271 (42.8\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{Comuna's altitude in the center (mt)} &
+  \multicolumn{1}{r}{353.372 (266.692)} &
+  \multicolumn{1}{r}{360.365 (275.483)} &
+  \multicolumn{1}{r}{0.486} \\
+\multicolumn{1}{l}{Comuna's longitude, degrees} &
+  \multicolumn{1}{r}{10.825 (2.342)} &
+  \multicolumn{1}{r}{10.897 (2.414)} &
+  \multicolumn{1}{r}{0.413} \\
+\multicolumn{1}{l}{Comuna's latitude, degrees} &
+  \multicolumn{1}{r}{44.243 (2.107)} &
+  \multicolumn{1}{r}{44.132 (2.010)} &
+  \multicolumn{1}{r}{0.149} \\
+\multicolumn{1}{l}{Comuna's minimum altitude (mt)} &
+  \multicolumn{1}{r}{228.271 (204.645)} &
+  \multicolumn{1}{r}{230.373 (211.636)} &
+  \multicolumn{1}{r}{0.785} \\
+\multicolumn{1}{l}{Comuna's climatic zone} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}1} &
+  \multicolumn{1}{r}{0 (0.0\%)} &
+  \multicolumn{1}{r}{2 (0.2\%)} &
+  \multicolumn{1}{r}{0.484} \\
+\multicolumn{1}{l}{\hspace{1em}B (600 $\le$ day-degrees $<$ 900)} &
+  \multicolumn{1}{r}{6 (0.4\%)} &
+  \multicolumn{1}{r}{3 (0.2\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}C (900 $\le$ day-degrees $<$ 1400)} &
+  \multicolumn{1}{r}{87 (5.1\%)} &
+  \multicolumn{1}{r}{61 (4.8\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}D (1400 $\le$ day-degrees $<$ 2100)} &
+  \multicolumn{1}{r}{238 (14.0\%)} &
+  \multicolumn{1}{r}{180 (14.2\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}E (2100 $\le$ day-degrees $<$ 3000)} &
+  \multicolumn{1}{r}{1,120 (66.0\%)} &
+  \multicolumn{1}{r}{828 (65.1\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}F (day-degrees ≥ 3000)} &
+  \multicolumn{1}{r}{246 (14.5\%)} &
+  \multicolumn{1}{r}{197 (15.5\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{Metropolitan city} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}0} &
+  \multicolumn{1}{r}{1,550 (91.3\%)} &
+  \multicolumn{1}{r}{1,139 (89.6\%)} &
+  \multicolumn{1}{r}{0.113} \\
+\multicolumn{1}{l}{\hspace{1em}1} &
+  \multicolumn{1}{r}{147 (8.7\%)} &
+  \multicolumn{1}{r}{132 (10.4\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{Comuna's altimetric zone} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}Inland hills} &
+  \multicolumn{1}{r}{547 (32.2\%)} &
+  \multicolumn{1}{r}{430 (33.8\%)} &
+  \multicolumn{1}{r}{0.063} \\
+\multicolumn{1}{l}{\hspace{1em}Coastal hills} &
+  \multicolumn{1}{r}{108 (6.4\%)} &
+  \multicolumn{1}{r}{56 (4.4\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}Inland mountain} &
+  \multicolumn{1}{r}{592 (34.9\%)} &
+  \multicolumn{1}{r}{457 (36.0\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}Coastal mountain} &
+  \multicolumn{1}{r}{5 (0.3\%)} &
+  \multicolumn{1}{r}{9 (0.7\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}Plains} &
+  \multicolumn{1}{r}{445 (26.2\%)} &
+  \multicolumn{1}{r}{319 (25.1\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{Comuna's degree of urbanisation} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}Low} &
+  \multicolumn{1}{r}{885 (52.2\%)} &
+  \multicolumn{1}{r}{737 (58.0\%)} &
+  \multicolumn{1}{r}{$<$0.001} \\
+\multicolumn{1}{l}{\hspace{1em}High} &
+  \multicolumn{1}{r}{121 (7.1\%)} &
+  \multicolumn{1}{r}{47 (3.7\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}Medium} &
+  \multicolumn{1}{r}{691 (40.7\%)} &
+  \multicolumn{1}{r}{487 (38.3\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{Muncipality's geographical area} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}Center} &
+  \multicolumn{1}{r}{245 (14.4\%)} &
+  \multicolumn{1}{r}{191 (15.0\%)} &
+  \multicolumn{1}{r}{0.010} \\
+\multicolumn{1}{l}{\hspace{1em}Islands} &
+  \multicolumn{1}{r}{105 (6.2\%)} &
+  \multicolumn{1}{r}{47 (3.7\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}North-East} &
+  \multicolumn{1}{r}{341 (20.1\%)} &
+  \multicolumn{1}{r}{278 (21.9\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}North-West} &
+  \multicolumn{1}{r}{822 (48.4\%)} &
+  \multicolumn{1}{r}{592 (46.6\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}South} &
+  \multicolumn{1}{r}{184 (10.8\%)} &
+  \multicolumn{1}{r}{163 (12.8\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{Comuna's mountain index} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}Non-mountainous} &
+  \multicolumn{1}{r}{804 (47.4\%)} &
+  \multicolumn{1}{r}{592 (46.6\%)} &
+  \multicolumn{1}{r}{0.641} \\
+\multicolumn{1}{l}{\hspace{1em}Partially mountainous} &
+  \multicolumn{1}{r}{92 (5.4\%)} &
+  \multicolumn{1}{r}{79 (6.2\%)} &
+  \multicolumn{1}{r}{} \\
+\multicolumn{1}{l}{\hspace{1em}Fully mountainous} &
+  \multicolumn{1}{r}{801 (47.2\%)} &
+  \multicolumn{1}{r}{600 (47.2\%)} &
+  \multicolumn{1}{r}{} \\
+\cline{1-4}
+\end{tabular}
+\end{table}
+\end{document}
