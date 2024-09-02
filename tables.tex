@@ -1,0 +1,78 @@
+\documentclass[authoryear,preprint,review,12pt]{elsarticle}
+\usepackage[utf8x]{inputenc}
+\usepackage[a4paper, total={6.5in, 10.5in}]{geometry}
+\usepackage[round]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{filecontents}
+\usepackage{lscape}
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{tablefootnote}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\captionsetup[figure]{font=footnotesize}
+\captionsetup[table]{font=footnotesize}
+\usepackage{rotating}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{array}
+\usepackage{csvsimple}
+\usepackage{threeparttable}
+\setlength{\tabcolsep}{9pt}
+\renewcommand{\arraystretch}{1.2}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18}
+\usepackage{array, multirow,makecell}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+\usepackage{wrapfig, blindtext}
+\usepackage{booktabs} % For \toprule, \midrule and \bottomrule
+\usepackage{siunitx} % Formats the units and values
+\hypersetup{colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    citecolor=blue
+    }
+\urlstyle{same}
+\onehalfspacing
+\usepackage{graphicx}
+\graphicspath{ {./images/}}
+
+
+\begin{document}
+
+
+
+\begin{table}[ht]
+\fontsize{3}{7.2}\selectfont
+\renewcommand{\arraystretch}{1.5}
+\caption{Regression table for DID analysis on mayor's relection}
+\centering
+\input{tables/step 2 regression}
+\end{table}
+
+\input{tables/descriptive}
+
+\begin{table}[ht]
+\fontsize{3}{7.2}\selectfont
+\renewcommand{\arraystretch}{1.5}
+\caption{Regression table for DID analysis on mayor's relection - CAS}
+\centering
+\input{tables/cas step 2}
+\end{table}
+
+
+
+
+
+\end{document}

@@ -1,0 +1,35 @@
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{p{2cm}*{9}{>{\centering\arraybackslash}p{1cm}}}
+\hline\hline
+                &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}&\multicolumn{1}{c}{(7)}&\multicolumn{1}{c}{(8)}&\multicolumn{1}{c}{(9)}\\
+                &\multicolumn{1}{c}{MC}&\multicolumn{1}{c}{MC}&\multicolumn{1}{c}{MC}&\multicolumn{1}{c}{MC}&\multicolumn{1}{c}{MC}&\multicolumn{1}{c}{MC}&\multicolumn{1}{c}{MC}&\multicolumn{1}{c}{MC}&\multicolumn{1}{c}{MC}\\
+\hline
+SAI opening (anytime previous term)& -0.00159         &  -0.0116         &  -0.0334         &                  &                  &                  &                  &                  &                  \\
+                &  (-0.09)         &  (-0.65)         &  (-1.44)         &                  &                  &                  &                  &                  &                  \\
+[1em]
+SAI opening (within two years before)&                  &                  &                  &  -0.0203         &  -0.0187         &  -0.0311         &                  &                  &                  \\
+                &                  &                  &                  &  (-0.98)         &  (-0.88)         &  (-1.17)         &                  &                  &                  \\
+[1em]
+SAI opening (within previous year)&                  &                  &                  &                  &                  &                  &  -0.0194         &  -0.0171         &  -0.0268         \\
+                &                  &                  &                  &                  &                  &                  &  (-0.45)         &  (-0.40)         &  (-0.53)         \\
+[1em]
+CAS center      &   0.0336\sym{*}  &   0.0288\sym{*}  &   0.0161         &   0.0328\sym{*}  &   0.0300\sym{*}  &   0.0217         &   0.0304\sym{*}  &   0.0285         &   0.0138         \\
+                &   (2.53)         &   (2.07)         &   (0.57)         &   (2.38)         &   (2.08)         &   (0.68)         &   (2.07)         &   (1.85)         &   (0.32)         \\
+[1em]
+Municipality's covariates (year - 1) &       No         &      Yes         &      Yes         &       No         &      Yes         &      Yes         &       No         &      Yes         &      Yes         \\
+[1em]
+Municipality's covariates (year - 2) &       No         &      Yes         &      Yes         &       No         &      Yes         &      Yes         &       No         &      Yes         &      Yes         \\
+\hline
+N               &    29100         &    27223         &     6038         &    26946         &    25431         &     4535         &    25302         &    23797         &     3158         \\
+Municipality FE &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+Year FE         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+Adjusted-R squared&    0.382         &    0.381         &    0.399         &    0.391         &    0.391         &    0.444         &    0.383         &    0.381         &    0.419         \\
+\hline\hline
+
+
+\multicolumn{10}{l}{\tiny \textit{t} statistics in parentheses}\\
+\multicolumn{10}{l}{\tiny \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+}

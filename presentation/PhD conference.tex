@@ -1,0 +1,503 @@
+\documentclass[xcolor={dvipsnames}]{beamer}
+\usepackage[natbib=true,style=authoryear,backend=bibtex,useprefix=true]{biblatex}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{caption}
+\usepackage{lipsum}
+\usepackage{multirow}
+\usepackage{epsfig}
+\usepackage{changepage}
+\usepackage{csvsimple}
+\usepackage{tabularx}
+\usepackage{pgfplotstable}
+\DeclareLanguageMapping{english}{english-apa}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\addbibresource{references2.bib}
+\usepackage[font=tiny,labelfont=bf]{caption}
+\usetheme{Berlin}
+\mode<presentation>
+\usecolortheme[named=BlueViolet]{structure}
+\graphicspath{ {./images/}}
+
+
+\title{Asylum seekers integration and local public finances}
+\subtitle{\footnotesize evidence from Italian refugees reception centres}
+\date{}
+
+\begin{document}
+
+\begin{frame}[t]\vspace{-1cm}
+\maketitle
+\vspace{-2.5cm}
+\centering
+\small
+Matteo Caruso and Giuseppe Migali \\ 
+\vspace{10} \\ 
+\tiny
+Department of Economics \\
+\vspace{1}
+Lancaster University Management School \\ 
+\vspace{5}
+\small 
+NWSSDTP Conference \\
+\tiny
+\vspace{3}
+Lancaster, 16 May 2024 \\
+\vspace{10}
+
+
+\begin{minipage}[t]{.5\linewidth}
+    \centering
+\includegraphics[scale = 0.4]{images/logo lums.jpg}
+\end{minipage}\hfill
+\begin{minipage}[t]{.5\linewidth}
+    \centering
+\includegraphics[scale = 0.14]{images/nwssdtplogo.png}
+\end{minipage}
+
+    
+\end{frame}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+  \tiny
+    \frametitle{Index}
+    \setcounter{tocdepth}{2}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\section{Introduction}
+
+\begin{frame}{Introduction and motivation}
+
+\begin{itemize} 
+\justifying
+
+\item \textbf{Migration} crucial issue both in Europe and US; \\
+
+\vspace{10}
+
+\item \textbf{Italy} as 'the first country of entry';
+
+\vspace{10}
+
+\item \textbf{Policies} are often detention centres rather than integration; \\
+
+\vspace{10}
+
+\item \textbf{Integration} a key aspect for positive impact of migrants; \\
+
+\vspace{10}
+
+\item \textbf{Public finances}: the size of local governments related to immigration \\
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Main results}
+
+
+\begin{itemize}
+\justifying
+\item Presence of second-line reception facilities (integration and formation) \textbf{increases overall public expenditure}; \\ 
+
+\vspace{5}
+
+\item It \textbf{increases} the share of public expenditure dedicated to \textbf{social activities}; \\
+
+\vspace{5}
+
+\item No effect on other activities (transportation, education, etc.); \\
+
+\vspace{5}
+
+\item \textbf{Positive spillovers on social expenditures} of local governments; 
+\end{itemize}
+    
+\end{frame}
+
+
+\section{Literature Review}
+
+\begin{frame}{Migration, public finances, integration}
+
+\fontsize{9}{7.2}\selectfont
+\begin{itemize}
+\justifying
+    \item No effect of migration on the\textbf{ size of the government }\citep{gerdes2011}; \\
+
+    \vspace{5}
+    
+    \item \textbf{Heterogeneous effects} on public finances between low- and high-skilled (negative and positive, respectively) \citep*{senses2022}; \\
+
+    \vspace{5}
+    
+\item Increased spending on \textbf{welfare and education} but lower for infrastructure and raising local taxes \citep{chevalier2023} \\
+
+\vspace{5}
+
+\item Presence of SPRAR related to \textbf{organised crime} infiltration \citep{proietti2022} \\
+
+\vspace{5}
+
+\begin{itemize}
+\fontsize{8}{7.2}\selectfont
+    \item Limited analysis not controlling for Extraordinary Reception Centres (CAS); \\
+    \vspace{3}
+    \item Using data for 2016, after new reform in 2015 establishing CAS; 
+\end{itemize}\\
+\vspace{5}
+\item Logic of \textbf{containment}, \textbf{confinement}, and \textbf{dispersal} \citep{campesi2018}
+
+\end{itemize}
+\end{frame}
+
+
+\section{Italy's legislation and reception centres (SPRAR)}
+
+\begin{frame}{Legislation}
+
+\begin{itemize}
+\justifying
+\item Law n° 189/2002 to set up the \textbf{National Asylum Programme (PNA)} \citep{cittalia2022} \\
+
+\vspace{5}
+
+\item to create the \textbf{Protection System for Asylum Seekers and Refugees (SPRAR)} \\
+
+\vspace{5}
+
+\item PNA as the \textbf{first public system} for welcoming refugees \\ 
+
+\vspace{5}
+    
+\begin{itemize}
+
+\item \textb{shared responsibilities} between \textbf{central} and \textbf{local} governments, involvement of the third sector;
+\item \textbf{Multi-level governance (MLG)};
+
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{SPRAR centres}
+
+\fontsize{9}{7.2}\selectfont
+Objectives: \\
+
+\vspace{10}
+
+\begin{itemize}
+    \item \textbf{independence} of the person; \\
+    \vspace{5}
+    \item \textbf{employment}, \textbf{housing}, access to \textbf{local services}; \\
+    \vspace{5}
+    \item \textbf{social interaction};
+    \\
+    \vspace{5}
+    \item \textbf{integration in schools} for minors;
+\end{itemize} \\
+\vspace{10}
+\justifying
+Language courses, job formation, educational programmes, legal advice, etc. \citep{cittalia2022} \\
+\vspace{10}
+
+Different from \textbf{Extraordinary Reception Centres} (CAS) with emergency purposes (first-line reception facilities), established in 2015 \citep{ricardguay2019}
+\end{frame}
+
+\begin{frame}{Projects}
+
+Structure of the projects: \\
+
+\vspace{5}
+
+\begin{itemize}
+\justifying
+    \item \textbf{Public nature}: funded and managed by public bodies; \\
+    \vspace{5}
+    
+    \item cooperation with \textbf{associations, cooperatives, NGOs}; \\
+    \vspace{5}
+    
+    \item \textbf{decentralisation}, management by local entities; \\
+    \vspace{5}
+    
+    \item \textbf{voluntary participation} of the municipality; \\
+    \vspace{5}
+    
+    \item \textbf{temporary nature} of the projects; \\
+    \vspace{5}
+    
+    \item \textbf{small capacity}: apartments with small numbers;
+\end{itemize}
+\\
+
+\vspace{10}
+\footnotesize
+Source: report on the Integration Reception System \citep{cittalia2022}
+\end{frame}
+
+\begin{frame}{Funding of the projects}
+
+\vspace{5}
+
+\begin{itemize}
+\justifying
+    \item \textbf{Municipalities} to apply for the opening of the SPRAR; \\
+    \vspace{5}
+    
+    \item Management of the centre by the \textbf{third sector} (associations, NGOs, cooperatives) \\
+    \vspace{5}
+    
+    \item \textbf{Funding up to 95\%} from the Ministry of the Interior \\
+    \vspace{5}
+    \begin{itemize}
+        \item "Fund for Asylum Policies and Services" established with this purpose;
+    \end{itemize}
+    
+    \item Third sector actors as \textbf{main beneficiaries of the reception money}; \\
+    \vspace{5}
+    \begin{itemize}
+        \item Local entities providing the services;
+        \item Local governments not directly affected by additional funding;
+    \end{itemize}
+    
+    
+\end{itemize}
+\\
+
+\vspace{10}
+\footnotesize
+\citep{ricardguay2019}
+\end{frame}
+
+
+
+\section{Data and Identification Strategy}
+
+\begin{frame}{Data}
+\begin{itemize}
+\justifying
+\item 6000 municipalities from 2005 to 2014; \\
+\vspace{5}
+
+\item Data on public expenditures and revenues \citep{openpolis2024}; \\
+\begin{itemize}
+\justifying
+    \item Expenditures and revenues divided by function (social expenditure, transportation, education, etc) \\ 
+    \vspace{5}
+\end{itemize}
+
+\item Data on the presence of the SPRAR in each municipality, from 2005-2021 \citep{proietti2022, cittalia2022}* \\
+
+\vspace{20}
+\fontsize{7.2}{7.2}\selectfont
+
+*We are grateful to Davide Luca for providing the data on SPRAR centres for the years 2009, 2012-2016.
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Structure of the data}
+\setstretch{1.5}
+\fontsize{7.2}{7.2}\selectfont
+\begin{table}[h]
+    \centering
+        \caption{Summary table for the number of municipalities opening a SPRAR facility in a specific year.}
+    \begin{tabular}{lccc}
+    \hline 
+\textbf{Years} & SPRAR & SPRAR (Always Treated) & Unaccompanied minors projects
+\\ 
+\hline
+2005&50&50&3 \\
+2006&55&60&7 \\
+2007&53&63&10 \\
+2008&66&76&10 \\
+2009&71&88&8 \\
+2010&81&86&6 \\
+2011&81&86&7 \\
+2012&83&106&8 \\
+2013&91&116&0 \\
+2014&248&273&39 \\
+\hline
+    \end{tabular}
+    \label{tab2}
+\end{table}
+
+\fontsize{6}{7.2}\selectfont
+Source: report on the Integration Reception System \citep{cittalia2022}
+    
+\end{frame}
+
+\begin{frame}{Structure of the data}
+\setstretch{1.2}
+\fontsize{6}{7.2}\selectfont \\
+\vspace{-10}
+\begin{table}[h]
+    \centering
+        \caption{Structure of the data following \cite{clarke2020}}
+    \begin{tabular}{l*{7}c}
+    \hline
+Municipality & Year & Event & Post event & Time to event & Lag 2 & Lag 1 & ... \\
+\hline \hline
+City 1 & 2005 & 2007 & 0 & -2 & 1 & 0 \\
+City 1 & 2006 & 2007 & 0 & -1 & 0 & 1 \\
+City 1 & 2007 & 2007 & 1 & 0 & 0 & 0 \\
+City 1 & 2008 & 2007 & 1 & 1 & 0 & 0 \\
+City 1 & 2009 & 2007 & 1 & 2 & 0 & 0 \\
+City 1 & 2010 & 2007 & 1 & 3 & 0 & 0 \\
+City 1 & 2011 & 2007 & 1 & 4 & 0 & 0 \\
+\hline
+City 2 & 2005 & 2009 & 0 & -4 & 0 & 0 \\
+City 2 & 2006 & 2009 & 0 & -3 & 0 & 0 \\
+City 2 & 2007 & 2009 & 0 & -2 & 1 & 0 \\
+City 2 & 2008 & 2009 & 0 & -1 & 0 & 1 \\
+City 2 & 2009 & 2009 & 1 & 0 & 0 & 0 \\
+City 2 & 2010 & 2009 & 1 & 1 & 0 & 0 \\
+City 2 & 2011 & 2009 & 1 & 2 & 0 & 0 \\
+\hline \hline
+\end{tabular}
+\end{table}
+
+\fontsize{6}{7.2}\selectfont
+Source: report on the Integration Reception System \citep{cittalia2022}
+    
+\end{frame}
+
+
+
+\section{Results}
+
+\begin{frame}[t]{Total and social expenditure: standard DID}
+\setstretch{2}
+\fontsize{7.2}{5}\selectfont
+\begin{tabular}{p{1.7cm}ccc}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+            &\multicolumn{1}{c}{Total expenditure}&\multicolumn{1}{c}{Social expenditure}&\multicolumn{1}{c}{Social expenditure personnel}\\
+\hline
+SPRAR          &      0.0455\sym{***}&      0.0379\sym{***}&     0.00112         \\
+            &      (6.26)         &     (18.40)         &      (0.72)         \\
+[1em]
+Total revenues (log) &      0.0537\sym{***}&      0.0135\sym{***}&     0.00328\sym{***}\\
+            &     (37.63)         &     (33.46)         &     (10.78)         \\
+[1em]
+Total revenues from the State (log)&     -0.0216\sym{***}&    -0.00727\sym{***}&    -0.00233\sym{***}\\
+            &    (-21.82)         &    (-26.04)         &    (-11.07)         \\
+\hline
+\(N\)       &       36914         &       24137         &       25847         \\
+Municipality FE & Yes & Yes & Yes \\
+Year FE & Yes & Yes & Yes \\ 
+\hline\hline
+\multicolumn{4}{l}{\textit{t} statistics in parentheses}\\
+\multicolumn{4}{l}{\sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+
+\end{frame}
+
+
+\begin{frame}{Event Study - Staggered DD}
+
+\fontsize{8}{7.2}\selectfont
+Following \citep{clarke2020}:
+
+
+\begin{figure}[H]
+\begin{minipage}[t]{.5\linewidth}
+   \centering
+    \caption{Effect on total expenditure}
+    \includegraphics[scale = 0.14]{images/eventdd total exp.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{.5\linewidth}
+    \centering
+    \caption{Effect on social services}
+    \includegraphics[scale = 0.14]{images/eventdd social share.png}
+\end{minipage}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Social services expenditure: breakdown}
+
+\vspace{-20}
+\begin{figure}[H]
+\begin{minipage}[t]{.5\linewidth}
+   \centering
+    \caption{Effect on kindergarden}
+    \includegraphics[scale = 0.1]{images/eventdd kindergarden.png}
+    \vspace{-10}
+    \caption{Effect on cemeterial services}
+    \includegraphics[scale = 0.1]{images/eventdd cemeterial.png}
+\end{minipage}\hfill
+\begin{minipage}[t]{.5\linewidth}
+    \centering
+    \caption{Effect on other social activities}
+    \includegraphics[scale = 0.1]{images/eventdd other social.png}
+    \vspace{-10}
+    \caption{Effect on the elderly}
+    \includegraphics[scale = 0.1]{images/eventdd elderly.png}
+\end{minipage}
+\end{figure}
+
+
+\end{frame}
+
+\begin{frame}{Calloway and Sant'Anna approach - Group-time ATT}
+
+\begin{minipage}[ht]{.5\linewidth} \\ 
+
+\begin{figure}
+    \centering
+    \includegraphics[scale = 0.17]{images/eventdd cs.png}
+    \caption{Group-time average treatment effect, following \cite{callaway2021}}
+\end{figure}
+\end{minipage}\hfill
+\begin{minipage}[ht]{.3\linewidth}
+\justifying
+\fontsize{8}{7.2}\selectfont 
+\vspace{50}
+    Group-time average treatment effect ATT(g,t): 3.6\% after one time period, 1.4\% after two time periods
+\end{minipage}
+    
+\end{frame}
+
+
+\section{Conclusions}
+
+\begin{frame}{Conclusions and further steps}
+\justifying
+\begin{itemize}
+\item \textbf{Additional expenditure} for the local government \textbf{on social activities};
+\begin{itemize}
+    \item Even when controlling for funds from the central government;
+\end{itemize}
+\item \textbf{Positive spillovers} on local public spending;
+
+\item Review more approaches by \cite{callaway2021};
+\item \textbf{Job market and spillovers} on the private sector;
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+\Large Thank you! \\
+\vspace{10}
+
+\normalsize
+Matteo Caruso \\
+\vspace{5}
+\hyperlink{m.caruso@lancaster.ac.uk}{m.caruso@lancaster.ac.uk} \\
+\vspace{10}
+\includegraphics[scale = 0.4]{images/logo lums.jpg}
+\end{center}
+\end{frame}
+
+
+\end{document}
